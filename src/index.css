@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand: #c5a059;
+    --brand-bright: #dfba74;
+    --brand-glow: rgba(197, 160, 89, 0.25);
+    --charcoal: #161311;
+    --card: #1c1815;
+    --card-hover: #221d19;
+    --muted: #a3998b;
+    --cream: #f4eee6;
+  }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background-color: #161311;
+    color: #f4eee6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Jost', sans-serif;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #dfba74;
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+.section-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 5rem 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.photo-hover {
+  overflow: hidden;
+}
+
+.photo-hover img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.photo-hover:hover img {
+  transform: scale(1.04);
+}
+
+/* Glassmorphic and subtle brass glow */
+.brass-glow {
+  box-shadow: 0 0 25px -5px rgba(197, 160, 89, 0.18);
+}
+
+.brass-border {
+  border-color: rgba(197, 160, 89, 0.2);
+}
+
+.brass-border-hover:hover {
+  border-color: rgba(197, 160, 89, 0.45);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #14110f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38312b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}

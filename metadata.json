@@ -1,0 +1,6 @@
+{
+  "name": "Ember Kitchens",
+  "description": "Upscale wood-fired restaurant experience featuring seasonal culinary creations, interactive menu, table reservations, online ordering, and private dining.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
